@@ -1,0 +1,151 @@
+body{
+  background:#dadada;
+  margin:0;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+ul li:before {
+  content: '✓';
+}
+
+li{
+  margin-bottom:20px;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.box-container{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  height: 500px;
+  background-color: white;
+  border-radius:20px;
+  padding:30px;
+  box-shadow: 5px 10px 19px #888888;
+}
+
+.initial-box{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  width:300px;
+  height:400px;
+  border-radius:10px;
+  background-color:#5D3FD3;
+  padding:20px;
+  margin:20px;
+  transition: .3s;
+  color:white;
+}
+
+.box{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  width:300px;
+  height:335px;
+  border-radius:10px;
+  background-color:#5D3FD3;
+  padding:20px;
+  margin:20px;
+  transition: .3s;
+  color:white;
+}
+
+.free-box{
+  background-color:whitesmoke;
+  color:black;
+}
+
+.headphoneImg{
+  border-radius:50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-self: center;
+}
+
+.planText{
+  font-family: 'Bebas Neue', cursive;
+  font-size:16px;
+  margin-left:20px;
+  margin-top:15px;
+}
+
+.header{
+  font-size:36px;
+  margin:0;
+}
+
+.price{
+  font-size:16px;
+}
+
+.holder{
+  display: flex;
+}
+
+.priceOptions{
+  display: flex;
+  flex-direction: column;
+}
+
+.underline{
+  width: 10%;
+  height: 5px;
+  background-color: white;
+  margin:0;
+}
+
+.free-underline{
+  background-color:black;
+}
+
+.upgrade{
+  background-color:#5D3FD3;
+  color:white;
+  border-radius: 10px;
+  height:50px;
+  cursor:pointer;
+  font-family: 'Bebas Neue', cursive;
+  font-size:16px;
+}
+
+.upgrade-premium{
+  background-color:white;
+  color:black;
+}
+
+@media screen and (max-width:1200px){
+  .box-container{
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height:auto;
+  }
+  .holder{
+    flex-direction:column;
+  }
+  .planText{
+    margin-top:10px;
+    text-align:center;
+  }
+  .underline{
+    margin:auto;
+    width:30%;
+  }
+
+}
